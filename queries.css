@@ -1,0 +1,162 @@
+/* Bigger Screen */
+@media screen and (max-width: 1200px) {
+    .showcase {
+        padding-top: 45%;
+    }
+    .container p {
+        margin: auto 12%;
+    }
+    .container .quarters {
+        width: 100%;
+    }
+    .containerdb {
+        width: 100%;
+    }
+    .dbQuarters .dbq {
+        padding: 8% 0;
+    }
+    .dbq h3 {
+        font-size: 55px;
+    }
+    .dbq p {
+        font-size: 20px;
+    }
+    .dashboard {
+        height: 225px;
+    }
+}
+
+/* Smaller Screen */
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 40%;
+    }
+    .dbq p {
+        font-size: 18px;
+    }
+}
+
+/* ----------Tablet Screen---------- */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 9vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #27AE60;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+        padding: 10px;
+    }
+    .menu {
+        display: block;
+    }
+    .showcase {
+        font-size: 40px;
+        padding-top: 65%;
+    }
+    .container h2 {
+        padding: 20px 0;
+        font-size: 23px;
+    }
+    .container p {
+        font-size: 15px;
+    }
+    .container .quarters {
+        width: 90%;
+    }
+    .container i {
+        font-size: 75px;
+        padding: 15px 0;
+    }
+    .footer {
+        font-size: 15px;
+    }
+}
+.nav-active {
+    transform: translateX(0%);
+    width: 50%;
+    background-color: #27AE60;
+}
+
+/* ----------Animations---------- */
+@keyframes linkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* ----------Togglers---------- */
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Smarthphones setup */
+@media screen and (max-width: 480px) {
+    .showcase {
+        padding-top: 100%;
+        font-size: 30px;
+    }
+    .container h2 {
+        font-size: 15px;
+    }
+    .quarters {
+        flex-direction: column;
+    }
+    .dashboard {
+        height: 65vh;
+    }
+    .dbQuarters {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+}
+
+/* Smaller Phones Setup */
+@media screen and (max-width: 380px) {
+    .showcase {
+        font-size: 25px;
+    }
+    .container .options {
+        font-size: 20px;
+    }
+    .options a {
+        padding: 5px;
+    }
+    .dashboard {
+        height: 75vh;
+    }
+    .dbq h3 {
+        font-size: 40px;
+    }
+    .footer h3 {
+        font-size: 10px;
+    }
+    /* Modal Setup for Smartphones */
+    .modal-content {
+        width: 320px;
+    }
+    .modal-contentSI {
+        width: 320px;
+    }
+}

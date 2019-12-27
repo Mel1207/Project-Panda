@@ -1,0 +1,265 @@
+/* link - nav - standard color #27AE60 */
+/* optional Colors flat #008000 */
+/* --------Basic setup--------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    background: #fff;
+    color: rgb(37, 37, 37);
+    scroll-behavior: smooth;
+}
+
+/* --------Nav setup--------- */
+nav {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: transparent;
+    position: fixed;
+    z-index: 1;
+}
+.coloredNav {
+    background: #27AE60;
+    transition: 1s ease-in;
+    box-shadow: 0px 2px 7px #333;
+}
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: rgb(248, 248, 248);
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(248, 248, 248);
+}
+
+/* --------Menu setup--------- */
+.menu {
+    display: none;
+    cursor: pointer;
+}
+.menu div {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(194, 194, 194);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Header setup */
+.main {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url(img/panda.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.showcase {
+    color: rgb(235, 235, 235);
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30%;
+}
+.container .options {
+    margin: 20px 0;
+    font-size: 25px;
+    text-align: center;
+}
+.options a {
+    padding: 15px;
+    text-decoration: none;
+    color: #27AE60;
+    border: 2px solid #27AE60;
+}
+.options a:hover {
+    background: #27AE60;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s ease;
+}
+
+/* Modal - Login Setup */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal-header h3 {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+    background-color: #27AE60;
+}
+.modal-content {
+    background-color: rgb(34, 34, 34);
+    width: 450px;
+    height: 350px;
+    margin: 10% auto;
+    box-shadow: 0 5px 8px #000;
+    animation: modalOpen 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes modalOpen {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.closeBtn {
+    color: #fff;
+    float: right;
+    font-size: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input {
+    color: #fff;
+    font-size: 15px;
+    height: 35px;
+    padding: 10px;
+    margin: 30px 20px 0 20px;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #27AE60;
+}
+form #btnSub {
+    background-color: #27AE60;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+/* modal Sign in */
+.modalSignIn {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal-contentSI {
+    background-color: rgb(34, 34, 34);
+    width: 450px;
+    height: 450px;
+    margin: 10% auto;
+    box-shadow: 0 5px 8px #000;
+    animation: modalOpen 1s;
+    animation-fill-mode: forwards;
+}
+.closeBtnSI {
+    color: #fff;
+    float: right;
+    font-size: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* About setup */
+.container h2 {
+    padding: 25px 0;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 30px;
+    color: #27AE60;
+}
+.container p {
+    font-size: 18px;
+    text-align: justify;
+    margin: auto 20%;
+}
+.container .quarters {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 80%;
+    display: flex;
+    text-align: center;
+}
+.container i {
+    font-size: 90px;
+    color: #27AE60;
+    margin-top: 10px;
+    padding: 20px 0;
+}
+.container h3 {
+    padding: 10px 0;
+    color: #27AE60;
+}
+
+/* Dashboard */
+.dashboard {
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(/img/Bamboo.jpg);
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+}
+.containerdb  {
+    width: 80%;
+    margin: auto;
+}
+.dbQuarters {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    color: #fff;
+}
+.dbQuarters .dbq {
+    text-align: center;
+    width: 100%;
+    padding: 10% 0;
+}
+.dbq h3 {
+    font-size: 70px;
+}
+.dbq p {
+    font-size: 25px;
+}
+/* Footer Setup */
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+}
+.footer h3 {
+    color: rgb(212, 212, 212);
+    padding: 30px;
+}

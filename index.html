@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Styles CSS import-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="queries.css">
+    <!-- Font awesome import -->
+    <script src="https://kit.fontawesome.com/d787e0ace0.js" crossorigin="anonymous"></script>
+    <!--Google Fonts import-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Panda Free VPN</title>
+</head>
+<body>
+    <section class="header">
+        <header class="main" id="main">
+            <!--Responsive Navbar with animation effects-->
+            <div class="wrapper">
+                <nav>
+                    <div class="logo">Logo</div>
+                    <ul class="nav-links">
+                        <li><a href="#main">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a class="btnSign" id="btnSign">Sign in</a></li>
+                    </ul>
+                    <div class="menu">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container">
+                <div class="showcase">
+                    <h1>Panda Free VPN</h1> <!--You can add Icon here or customize font-->
+                    <h4>Fast & Reliable VPN Service </h4>
+                </div>
+                <div class="options">
+                    <a class="btn" id="modalOpen">Login</a>
+                    <a href="#about" class="btn">read more</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- modal - login form -->
+        <div class="modal" id="simpleModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="closeBtn">&times;</span>
+                    <h3>Login</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="input-fields">
+                        <input type="text" placeholder="your username">
+                        <input type="text" placeholder="your password">
+                        <input type="submit" value="submit" id="btnSub">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal - Sign in form -->
+        <div class="modalSignIn" id="simpleModalSignIn">
+            <div class="modal-contentSI">
+                <div class="modal-header">
+                    <span class="closeBtnSI">&times;</span>
+                    <h3>Account Information</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="input-fields">
+                        <input type="text" placeholder="your username">
+                        <input type="text" placeholder="your email">
+                        <input type="text" placeholder="your password">
+                        <input type="submit" value="submit" id="btnSub">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section about -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>We have the fast and reliable VPN for you</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cupiditate maxime. Quae error possimus facere reiciendis. Ratione, quibusdam perferendis! Odio? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae, pariatur.
+            </p>
+            <div class="quarters">
+                <div class="q1">
+                    <i class="fas fa-ban"></i>
+                    <h3>NO CARDING</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dolor, qui odit voluptate architecto corrupti!</p>
+                </div>
+                <div class="q2">
+                    <i class="fas fa-comment-dollar"></i>
+                    <h3>100% FREE</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dolor, qui odit voluptate architecto corrupti!</p>
+                </div>
+                <div class="q3">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>100% PROTECTION</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic dolor, qui odit voluptate architecto corrupti!</p>
+                </div>
+            </divc>
+        </div>
+    </section>
+
+    <!-- small Dashboard -->
+    <section class="dashboard">
+        <div class="dasboard-content">
+            <div class="containerdb">
+                <div class="dbQuarters">
+                    <div class="dbq">
+                        <h3>1095</h3>
+                        <p>HAPPY CLIENTS</p>
+                    </div>
+                    <div class="dbq">
+                        <h3>1500</h3>
+                        <p>MONTHLY VISITORS</p>
+                    </div>
+                    <div class="dbq">
+                        <h3>200</h3>
+                        <p>UPCOMING UPGRADES</p>
+                    </div>
+                    <div class="dbq">
+                        <h3>3000</h3>
+                        <p>EXPANSION</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <h3>PANDA VPN TEAM copyright 2019. All rights reserved</h3>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
